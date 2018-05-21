@@ -34,6 +34,26 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+	<dependency>
+      <groupId>com.google.appengine</groupId>
+      <artifactId>appengine-api-1.0-sdk</artifactId>
+      <version>1.9.63</version>  
+    </dependency>
+    
+    <dependency>
+      <groupId>com.google.appengine</groupId>
+      <artifactId>appengine-testing</artifactId>      
+      <scope>test</scope>
+       <version>1.9.63</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.appengine</groupId>
+      <artifactId>appengine-api-stubs</artifactId>      
+      <scope>test</scope>
+       <version>1.9.63</version>
+    </dependency>
+    
 	</dependencies>
 
 
@@ -57,6 +77,11 @@
 					<warName>AngularAgenda</warName>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>1.9.63</version>
 			</plugin>
 		</plugins>
 		<finalName>AngularAgenda</finalName>
